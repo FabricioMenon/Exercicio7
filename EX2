@@ -1,0 +1,16 @@
+# Solicitar uma palavra ao usuário
+palavra = input("Digite uma palavra: ")
+
+# Criando um dicionário para armazenar a contagem de cada caractere
+contagem_caracteres = {}
+
+# Contando os caracteres da palavra
+for char in palavra:
+    if char in contagem_caracteres:
+        contagem_caracteres[char] += 1
+    else:
+        contagem_caracteres[char] = 1
+
+# Exibindo o dicionário com a contagem de caracteres
+print("\nContagem de caracteres na palavra:")
+print(contagem_caracteres)
