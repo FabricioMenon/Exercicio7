@@ -1,0 +1,17 @@
+# Dicionário de produtos, onde o código do produto é a chave
+produtos = {
+    101: ("Produto A", 15.50),
+    102: ("Produto B", 32.75),
+    103: ("Produto C", 21.20),
+    104: ("Produto D", 50.00)
+}
+
+# Solicitar ao usuário o código de um produto
+codigo_produto = int(input("Digite o código do produto: "))
+
+# Verificar se o código existe no catálogo
+if codigo_produto in produtos:
+    nome, preco = produtos[codigo_produto]
+    print(f"\nProduto: {nome}\nPreço: R${preco:.2f}")
+else:
+    print("Produto não encontrado.")
