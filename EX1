@@ -1,0 +1,13 @@
+# Criando o dicionário para armazenar alunos e suas notas
+alunos = {}
+
+# Solicitando a entrada de pelo menos 3 alunos
+for _ in range(3):
+    nome = input("Digite o nome do aluno: ")
+    nota = float(input(f"Digite a nota do aluno {nome}: "))
+    alunos[nome] = nota
+
+# Exibindo a lista de alunos e suas respectivas notas
+print("\nLista de Alunos e suas Notas:")
+for aluno, nota in alunos.items():
+    print(f"{aluno}: {nota}")
