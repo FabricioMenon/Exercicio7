@@ -1,0 +1,17 @@
+# Dicionário de traduções
+dicionario = {
+    "cachorro": "dog",
+    "gato": "cat",
+    "livro": "book",
+    "praia": "beach",
+    "carro": "car"
+}
+
+# Solicitar ao usuário uma palavra em português
+palavra = input("Digite uma palavra em português para tradução: ").lower()
+
+# Buscar a tradução no dicionário
+if palavra in dicionario:
+    print(f"A tradução de '{palavra}' para o inglês é: {dicionario[palavra]}")
+else:
+    print(f"A tradução para '{palavra}' não foi encontrada.")
